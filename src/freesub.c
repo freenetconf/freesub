@@ -100,10 +100,16 @@ static void usage(void)
 
 int main(int argc, char **argv)
 {
-	char *cmdname = *argv;
 	int fd_std = STDIN_FILENO, fd_tcp;
 	char *host = NULL, *port = NULL;
+	char *cmdname;
 	int c, rc = 0;
+
+	cmdname = strrchr(*argv, '/');
+	if (cmdname)
+		cmdname = cmdname + 1;
+	else
+		cmdname = *argv;
 
 	if (strcmp(cmdname, "netconf") == 0) {
 		host = "127.0.0.1";
