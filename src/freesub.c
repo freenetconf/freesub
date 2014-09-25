@@ -77,6 +77,7 @@ static void tcp_notify_read(struct ustream *s, int bytes)
 			break;
 
 		printf("%.*s", len, data);
+		fflush(stdout);
 
 		ustream_consume(s, len);
 	} while (1);
