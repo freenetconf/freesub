@@ -112,9 +112,10 @@ int main(int argc, char **argv)
 	else
 		cmdname = *argv;
 
+	/* targeted at freenetconfd which uses 1831 by default */
 	if (strcmp(cmdname, "netconf") == 0) {
 		host = "127.0.0.1";
-		port = "830";
+		port = "1831";
 	}
 
 	while ((c = getopt_long(argc, argv, "H:P:h", long_options, NULL)) != EOF) {
