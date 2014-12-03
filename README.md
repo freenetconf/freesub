@@ -17,8 +17,8 @@ buffer management, and other. The sources can be found
 
 For most users it will be much easier to use already made packages. At the
 moment packages can be found for
-[OpenWrt](https://github.com/openwrt-management/packages/freesub/Makefile) and
-[Arch](https://aur.archlinux.org/packages/freesub-git/).
+[OpenWrt](https://github.com/openwrt-management/packages/blob/master/freesub/Makefile)
+and [Arch](https://aur.archlinux.org/packages/freesub-git/).
 
 _freesub_ can also be easily compiled and installed from source:
 
