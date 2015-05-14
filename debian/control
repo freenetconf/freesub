@@ -1,0 +1,12 @@
+Source: freesub
+Section: devel
+Priority: optional
+Maintainer: Luka Perkov <luka.perkov@sartura.hr>
+Build-Depends: debhelper (>= 8.0.0), cmake
+Standards-Version: 3.9.4
+Homepage: http://www.freenetconf.org/
+
+Package: freesub
+Architecture: amd64 i386
+Depends: libubox
+Description: A simple stdin/stdout to/from tcp forwarding tool
